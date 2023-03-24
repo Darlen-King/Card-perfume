@@ -1,6 +1,118 @@
-body{
-    background-color: aquat;
+*{
+    margin: 0; /*zera a margen externa*/
+    padding: 0;/* zera a margen interna*/
+    box-sizing: border-box;/*faz uma box se encaixa dentro de outa box de maneira mais simples*/
 }
-h1{
-    color: red;
+body{
+    background-color: hsl(30, 38%, 92%);/* cor do undo da imagen*/
+    height: 100vh;/*(height) esta se referinda a altura da pagina*/
+    display: flex;/*display é o iten e flex é a função de display que eu estou usando*/
+    align-items: center;/*(display tem que esta ativo)me permite coloca tudo no centro mas para ultiliza eu tenho que defini o tamanho para ai ele escolher o centro do valor escolhido*/
+    justify-content: center;/*(display tem que esta ativo)me da a possibilidade de escoler  a possião de onde os itens mas somente no sentido horizontal*/
+    font-family: "Fraunces", serif;/*estou chamando a fonte que eu quero*/
+}
+.card{
+    background-color: hsl(0, 0%, 100%);/* cor do undo da imagen*/
+    max-width: 666px;/*esse vai serr o tamanho maximo da minha div no sentido horizontal*/
+    border-radius: 15px;/*deixa as bordas aredondadas*/
+    
+    display: grid;/*display é o iten e flex é a função de display que eu estou usando*/
+    grid-template-columns: 333px 333px;
+    }
+.img_container img {
+    width: 100%;
+    height: 100%;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px;
+}
+.mobile{
+    display: none;
+}
+
+.details_container .name {
+    color: hsl(212, 21%, 14%);
+    padding: 0px 35px 18px 30px;
+    font-family: "Fraunces";
+    font-size: 35px;
+    line-height: 1;
+
+}
+.details_container .description {
+    color: hsl(228, 12%, 48%);
+    padding: 0px 40px 30px 30px;
+    font-family: "Montserrat";
+    font-size: 16px;
+    line-height: 1.5;
+}
+.montserrat {
+    color: hsl(228, 12%, 48%);
+    padding: 40px 0px 20px 30px;
+    font-family: "Montserrat";
+    font-size: 14px;
+    letter-spacing: 5px;
+
+}
+.price_container {
+    display: flex;
+    align-items: center;
+    
+}
+
+.price_container .current_price {
+    color: hsl(158, 36%, 37%);
+    padding: 0px 20px 0px 30px;
+    font-size: 37px;
+}
+
+.price_container .old_price {
+    color: hsl(228, 12%, 48%);
+    font-family: "Montserrat";
+    font-weight: 500;
+    text-decoration: line-through;
+}
+.details_button{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.button{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    padding: 18px 70px 18px 70px;
+    border-radius: 10px;
+    border:none;
+}
+.details_button .button .add{
+    padding-left: 14px;
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+}
+.details_button .button .buy{
+    width: 18px;
+}
+.details_button:hover .button{
+    background-color: hsl(212, 21%, 14%);
+}
+@media (max-width:550px){
+
+.card{
+    grid-template-columns: 1fr;
+    
+}
+.img_container img{
+    border-top-right-radius:10px;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius:0px;
+}
+.montserrat{
+    padding:30px 0px 15px 30px ;
+}
+.mobile{
+    display: block;
+}
+.desk{
+    display: none;
+}
 }
