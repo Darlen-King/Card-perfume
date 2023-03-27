@@ -15,7 +15,7 @@ body{
     background-color: hsl(0, 0%, 100%);/* cor do undo da imagen*/
     max-width: 666px;/*esse vai serr o tamanho maximo da minha div no sentido horizontal*/
     border-radius: 15px;/*deixa as bordas aredondadas*/
-    
+    margin: 15px;
     display: grid;/*display é o iten e flex é a função de display que eu estou usando*/
     grid-template-columns: 333px 333px;
     }
@@ -93,9 +93,9 @@ body{
     width: 18px;
 }
 .details_button:hover .button{
-    background-color: hsl(212, 21%, 14%);
+    background-color: hsl(159, 85%, 13%);
 }
-@media (max-width:550px){
+@media (max-width:700px){
 
 .card{
     grid-template-columns: 1fr;
@@ -107,7 +107,7 @@ body{
     border-bottom-left-radius:0px;
 }
 .montserrat{
-    padding:30px 0px 15px 30px ;
+    padding:30px 0px 15px 25px ;
 }
 .mobile{
     display: block;
@@ -115,4 +115,26 @@ body{
 .desk{
     display: none;
 }
+.details_container .name{
+    padding: 0px 22px 18px 25px;
 }
+.details_container .description{
+    padding:0px 20px 15px 25px;
+    font-size: 15px;
+}
+.price_container .current_price {
+    font-size: 35px;
+    padding: 0px 25px 0px 25px;
+}
+.price_container .old_price {
+    font-size: 14px;
+}
+.details_button{
+    padding: 15px 0px 25px 0px;
+}
+.button{
+    padding: 17px 98px;
+    
+}
+}
+
