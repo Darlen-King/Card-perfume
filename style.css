@@ -92,7 +92,7 @@ body{
 .details_button .button .buy{
     width: 18px;
 }
-.details_button:hover .button{
+.button:hover{
     background-color: hsl(159, 85%, 13%);
 }
 @media (max-width:700px){
